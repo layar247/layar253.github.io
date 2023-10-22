@@ -1,151 +1,47 @@
 <!DOCTYPE html>
-<html lang=ru>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title>Задание 5</title>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-        <link rel="stylesheet" href="style.css">
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-        <script src="calc.js"></script>
-    </head>
-    <body>
-        <header class="d-flex justify-content-between align-items-center">
-            <div class="d-flex align-items-center">
-                <img class="logo" src="Vkysno.png" alt="Логотип Вкусно и точка">
-                <h1 class="ml-2">Вкусно и точка</h1>
-            </div>
-        </header>
-        <div class="container-fluid">
-            <h2>Корзина:</h2>
-            <form name="calculator" onsubmit="return false;">
-                <div class="row">
-                    <div class="col-5 col-lg-3">
-                        <b>Наименование</b>
-                    </div>
-                    <div class="col-3 col-lg-2">
-                        <b>Цена в рублях</b>
-                    </div>
-                    <div class="col-3 col-lg-2">
-                        <b>Количество</b>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-5 col-lg-3">
-                        Гранд де Люкс
-                    </div>
-                    <div class="col-3 col-lg-2">
-                        <input name="price" type="text" value="120">
-                    </div>
-                    <div class="col-3 col-lg-2">
-                        <input name="count" type="text" value="0">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-5 col-lg-3">
-                        Биг Спешиал
-                    </div>
-                    <div class="col-3 col-lg-2">
-                        <input name="price0" type="text" value="150">
-                    </div>
-                    <div class="col-3 col-lg-2">
-                        <input name="count0" type="text" value="0">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-5 col-lg-3">
-                        Ролл с креветкой
-                    </div>
-                    <div class="col-3 col-lg-2">
-                        <input name="price1" type="text" value="200">
-                    </div>
-                    <div class="col-3 col-lg-2">
-                        <input name="count1" type="text" value="0">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-5 col-lg-3">
-                        Липтон зеленый 0.5 литра
-                    </div>
-                    <div class="col-3 col-lg-2">
-                        <input name="price2" type="text" value="180">
-                    </div>
-                    <div class="col-3 col-lg-2">
-                        <input name="count2" type="text" value="0">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-5 col-lg-3">
-                        Липтон с лимоном 0.5 литра
-                    </div>
-                    <div class="col-3 col-lg-2">
-                        <input name="price3" type="text" value="160">
-                    </div>
-                    <div class="col-3 col-lg-2">
-                        <input name="count3" type="text" value="0">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-5 col-lg-3">
-                        Картошка фри
-                    </div>
-                    <div class="col-3 col-lg-2">
-                        <input name="price4" type="text" value="180">
-                    </div>
-                    <div class="col-3 col-lg-2">
-                        <input name="count4" type="text" value="0">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-5 col-lg-3">
-                        Картошка по деревенский
-                    </div>
-                    <div class="col-3 col-lg-2">
-                        <input name="price5" type="text" value="250">
-                    </div>
-                    <div class="col-3 col-lg-2">
-                        <input name="count5" type="text" value="0">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-5 col-lg-3">
-                        Овощной салат
-                    </div>
-                    <div class="col-3 col-lg-2">
-                        <input name="price6" type="text" value="330">
-                    </div>
-                    <div class="col-3 col-lg-2">
-                        <input name="count6" type="text" value="0">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-5 col-lg-3">
-                        Нагетсы 6 шт.
-                    </div>
-                    <div class="col-3 col-lg-2">
-                        <input name="price7" type="text" value="280">
-                    </div>
-                    <div class="col-3 col-lg-2">
-                        <input name="count7" type="text" value="0">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-5 col-lg-3">
-                        Фанта 0.5 литра
-                    </div>
-                    <div class="col-3 col-lg-2">
-                        <input name="price8" type="text" value="270">
-                    </div>
-                    <div class="col-3 col-lg-2">
-                        <input name="count8" type="text" value="0">
-                    </div>
-                </div>
-                <button onclick="calc();">Рассчитать</button>
-                
-            </form>
-            <div class="pt-2" id="result"></div>
-        </div>
-    </body>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Задание 7</title>
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/f2d292fc5f.js" crossorigin="anonymous"></script>
+	<script src="slick/slick.min.js"></script>
+</head>
+<body >
+	<div class="container-fluid">
+		<div class="row justify-content-center mt-5">
+            <button type="button" class="btn btn-juliet" id="prev">
+                <i class="fa fa-arrow-circle-left text-primary"></i>
+            </button>
+			<div class="col-8 gallery">
+				<img src="1.jpg" alt="Пудж">
+                <img src="2.jpeg" alt="1000-7 гуль">
+                <img src="3.jpg" alt="течис">
+                <img src="4.jpg" alt="Арк варден">
+                <img src="5.jpg" alt="Сларк">
+                <img src="6.png" alt="Рундук">
+                <img src="7.jpg" alt="Огр маг">
+                <img src="8.jpg" alt="Фантомка">
+                <img src="9.jpg" alt="Шторм">
+                <img src="10.jpg" alt="Лина">
+                <img src="11.jpg" alt="Энигма">
+                <img src="12.jpg" alt="Фейслесс войд">
+                <img src="13.jpg" alt="Гуля">
+                <img src="14.jpg" alt="Алхимик">
+                <img src="15.jpg" alt="Цмка">
+                <img src="16.jpg" alt="Морф">
+			</div>
+            <button type="button" class="btn btn-juliet" id="next">
+                <i class="fas fa-arrow-circle-right text-primary"></i>
+            </button>
+		</div>
+	</div>
+	<script src="slick.js"></script>
+</body>
 </html>
