@@ -1,23 +1,23 @@
-.logo {
-    width: 45px;
-    float: left;
-    padding-right: 10px;
-}
-h1 {
-    font-size: 30px;
-    color: rgb(255, 187, 0);
+body {
+  font-family: sans-serif;
+  margin: auto;
+  max-width: 1280px;
 }
 
-button {
-    background-color: greenyellow;
+.navbar {
+  background-color: #313236;
+  border-radius: 2px;
+  max-width: 800px;
 }
 
-@media (min-width: 768px) {
-    h1 {
-        font-size: 60px;
-    }
-    .logo {
-        width: 100px;
-        padding-right: 20px;
-    }
+.navbar a {
+  color: #aaa;
+  display: inline-block;
+  font-size: 15px;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  color: #ffffff;
 }
