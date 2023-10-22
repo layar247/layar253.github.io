@@ -21,9 +21,24 @@ body {
 .navbar a:hover {
   color: #ffffff;
 }
-img {
+<img src="1.jpg" class="styled-image">
+<img src="2.jpeg" class="styled-image">
+<img src="3.jpg" class="styled-image">
+<img src="4.jpg" class="styled-image">
+<img src="5.jpg" class="styled-image">
+<img src="6.png" class="styled-image">
+<img src="7.jpg" class="styled-image">
+<img src="8.jpg" class="styled-image">
+<img src="9.jpg" class="styled-image">
+<img src="10.jpg" class="styled-image">
+<img src="11.jpg" class="styled-image">
+<img src="12.jpg" class="styled-image">
+<img src="13.jpg" class="styled-image">
+<img src="14.jpg" class="styled-image">
+<img src="15.jpg" class="styled-image">
+.styled-image {
     max-width: 100%;
     height: auto;
-    border: 1px solid #ccc; /* Опционально: добавление рамки для изображений */
-    border-radius: 5px;    /* Опционально: добавление скругленных углов */
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
