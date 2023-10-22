@@ -14,6 +14,10 @@
     touch-action: pan-y;
     -webkit-tap-highlight-color: transparent;
 }
+.slick-slide img {
+    width: 100%; /* Установите ширину в процентах или в пикселях */
+    height: auto; /* Автоматическая высота для сохранения пропорций */
+}
 .slick-list {
     position: relative;
     overflow: hidden;
